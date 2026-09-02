@@ -20,27 +20,31 @@
         <section id="add-expense-section">
             <h2>Add Expense</h2>
             
-            <div class="form-group">
-                <label for="expense-name">Expense Name:</label>
-                <input type="text" id="expense-name" placeholder="e.g., Groceries">
-            </div>
+            <!-- Semantic form tag added here for user submissions -->
+            <form id="expense-form">
+                <div class="form-group">
+                    <label for="expense-name">Expense Name:</label>
+                    <input type="text" id="expense-name" placeholder="e.g., Groceries">
+                </div>
 
-            <div class="form-group">
-                <label for="expense-amount">Amount:</label>
-                <input type="number" id="expense-amount" placeholder="0.00">
-            </div>
+                <div class="form-group">
+                    <label for="expense-amount">Amount:</label>
+                    <input type="number" id="expense-amount" placeholder="0.00">
+                </div>
 
-            <div class="form-group">
-                <label for="expense-category">Category:</label>
-                <select id="expense-category">
-                    <option value="">-- Select Category --</option>
-                    <option value="food">Food</option>
-                    <option value="transport">Transport</option>
-                    <option value="entertainment">Entertainment</option>
-                </select>
-            </div>
-            
-            <button type="button">Add</button>
+                <div class="form-group">
+                    <label for="expense-category">Category:</label>
+                    <select id="expense-category">
+                        <option value="">-- Select Category --</option>
+                        <option value="food">Food</option>
+                        <option value="transport">Transport</option>
+                        <option value="entertainment">Entertainment</option>
+                    </select>
+                </div>
+                
+                <!-- Changed type to "submit" inside a form context -->
+                <button type="submit">Add</button>
+            </form>
         </section>
 
         <!-- Part 3 - The "Your Expenses" placeholder -->
